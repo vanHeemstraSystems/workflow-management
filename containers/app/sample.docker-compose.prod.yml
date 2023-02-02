@@ -10,8 +10,8 @@ secrets:
 services:
  
   homer:
-    secrets:
-      - proxy_password
+  #  secrets:
+  #    - proxy_password
     build:
       context: ./homer
       dockerfile: Dockerfile.prod
