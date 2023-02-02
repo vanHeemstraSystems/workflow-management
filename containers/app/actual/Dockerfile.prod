@@ -13,8 +13,9 @@
 # See also "Your DOCKER NextJS IMAGE SUCKS! Optimize it! | HOW TO" at https://www.youtube.com/watch?v=dtLpWR98HfE
 
 ARG IMAGE_REPOSITORY
+ARG IMAGE_REPOSITORY_SEPARATOR
 # Install dependencies only when needed
-FROM ${IMAGE_REPOSITORY}/jlongster/actual-server:23.1.12-alpine AS deps
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}jlongster/actual-server:23.1.12-alpine AS deps
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER

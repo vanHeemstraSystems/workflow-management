@@ -1,6 +1,7 @@
 ARG IMAGE_REPOSITORY
+ARG IMAGE_REPOSITORY_SEPARATOR
 # pull official base image, see https://hub.docker.com/r/jlongster/actual-server
-FROM ${IMAGE_REPOSITORY}/jlongster/actual-server:23.1.12-alpine
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}jlongster/actual-server:23.1.12-alpine
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER

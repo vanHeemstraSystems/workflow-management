@@ -1,6 +1,7 @@
 ARG IMAGE_REPOSITORY
+ARG IMAGE_REPOSITORY_SEPARATOR
 # pull official base image, see https://hub.docker.com/r/jc21/nginx-proxy-manager
-FROM ${IMAGE_REPOSITORY}/jc21/nginx-proxy-manager:latest
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}jc21/nginx-proxy-manager:latest
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER

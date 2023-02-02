@@ -13,9 +13,10 @@
 # See also "Your DOCKER NextJS IMAGE SUCKS! Optimize it! | HOW TO" at https://www.youtube.com/watch?v=dtLpWR98HfE
 
 ARG IMAGE_REPOSITORY
+ARG IMAGE_REPOSITORY_SEPARATOR
 # Install dependencies only when needed
 # pull official base image, see https://hub.docker.com/r/b4bz/homer
-FROM ${IMAGE_REPOSITORY}/b4bz/homer:v22.11.2 AS deps
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}b4bz/homer:v22.11.2 AS deps
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER
