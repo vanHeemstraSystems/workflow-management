@@ -1,3 +1,5 @@
+[![Quarto Publish](https://github.com/vanHeemstraSystems/financial-management/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/financial-management/actions/workflows/publish.yml)
+
 financial-management
 # Financial Management
 
