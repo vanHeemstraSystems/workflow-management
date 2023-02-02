@@ -3,6 +3,12 @@
 financial-management
 # Financial Management
 
+Can be read as "Financial Management" at https://app.gitbook.com/s/Rs3XPuVclvoj92Exb9AA/
+
+Can be browsed as "Financial  Management" at https://vanheemstrasystems.github.io/financial-management/
+
+Documentation of this repository is automatically done with Quarto using GitHub Actions as described at https://github.com/vanHeemstraSystems/quarto-to-github-pages/blob/main/300/300/README.md
+
 Based on "Actual" at https://github.com/actualbudget/actual
 
 Based on "Actual Server" at https://hub.docker.com/r/jlongster/actual-server
