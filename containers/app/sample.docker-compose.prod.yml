@@ -37,7 +37,11 @@ services:
     #  - ./homer:/app
     #  - /app/node_modules
       - ./homer/config:/www/assets
-    # environment:
+    user: 1000:1000  
+    environment:
+      - INIT_ASSETS=0
+    #  - UID=1000
+    #  - GID=1000
     #  - CHOKIDAR_USEPULLING=true
     #  - PROXY_PASSWORD='/run/secrets/proxy_password'
     depends_on:
