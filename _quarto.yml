@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Financial Management"
+  title: "Facts Management"
   navbar:
     left:
       - href: index.qmd
