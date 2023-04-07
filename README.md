@@ -36,6 +36,16 @@ $ docker-compose --file docker-compose.dev.yml --project-name facts-management-d
 - Email Address / Username: = Use the value of PGADMIN_DEFAULT_EMAIL_DEV/PROD as specified in the .env file
 - Password: Use the value of PGADMIN_DEFAULT_PASSWORD_DEV/PROD as specified in the .env file
 
+Inside pgAdmin register a new Server using the following credentials:
+
+From the menu choose File > Register Server > Connection:
+
+- Host name/address: localhost
+- Port: Use the value of port as specified in the docker-compose file
+- Maintenance database: postgres
+- Username: Use the value of POSTGRES_USERNAME_DEV/PROD as specified in .env file
+- Password: Use the value of POSTGRES_PASSWORD_DEV/PROD as specified in .env file
+
 **NOTE**: When you try to login to PostgreSQL database via **Adminer**, use the following credentials:
 
 - System: PostgreSQL
