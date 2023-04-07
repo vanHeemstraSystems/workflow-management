@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Financial - Management](README.md)
+* [Facts - Management](README.md)
