@@ -9,9 +9,9 @@ Can be browsed as "Facts  Management" at https://vanheemstrasystems.github.io/fa
 
 Documentation of this repository is automatically done with Quarto using GitHub Actions as described at https://github.com/vanHeemstraSystems/quarto-to-github-pages/blob/main/300/300/README.md
 
-Based on "Sigma" at ...
+Based on "Sigma" at https://www.sigmajs.org/#quickstart
 
-Based on "Looking Glass" at ...
+Based on "Looking Glass" at https://github.com/MercuryTechnologies/looking-glass-viewer
 
 Based on "Looking Glass Graph Viewer" at https://mercurytechnologies.github.io/looking-glass-viewer/
 
