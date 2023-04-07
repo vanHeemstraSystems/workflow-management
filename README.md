@@ -1,19 +1,19 @@
-[![Quarto Publish](https://github.com/vanHeemstraSystems/financial-management/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/financial-management/actions/workflows/publish.yml)
+[![Quarto Publish](https://github.com/vanHeemstraSystems/facts-management/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/facts-management/actions/workflows/publish.yml)
 
-financial-management
-# Financial Management
+facts-management
+# Facts Management
 
-Can be read as "Financial Management" at https://app.gitbook.com/s/Rs3XPuVclvoj92Exb9AA/
+Can be read as "Facts Management" at https://app.gitbook.com/s/Rs3XPuVclvoj92Exb9AA/
 
-Can be browsed as "Financial  Management" at https://vanheemstrasystems.github.io/financial-management/
+Can be browsed as "Facts  Management" at https://vanheemstrasystems.github.io/facts-management/
 
 Documentation of this repository is automatically done with Quarto using GitHub Actions as described at https://github.com/vanHeemstraSystems/quarto-to-github-pages/blob/main/300/300/README.md
 
-Based on "Actual" at https://github.com/actualbudget/actual
+Based on "Sigma" at ...
 
-Based on "Actual Server" at https://hub.docker.com/r/jlongster/actual-server
+Based on "Looking Glass" at ...
 
-Based on "Actual - Documentation" at https://actualbudget.github.io/docs/
+Based on "Looking Glass Graph Viewer" at https://mercurytechnologies.github.io/looking-glass-viewer/
 
 Create yarn.lock file as follows:
 
@@ -26,7 +26,7 @@ Run as follows:
 
 ```
 $ cd containers/app
-$ docker-compose --file docker-compose.dev.yml --project-name financial-management-dev up --build -d
+$ docker-compose --file docker-compose.dev.yml --project-name facts-management-dev up --build -d
 ```
 
 ## Accessing Actual
