@@ -33,7 +33,7 @@ $ docker-compose --file docker-compose.dev.yml --project-name facts-management-d
 
 - System: PostgreSQL
 - Server: = IP address and exposed postgresql port (e.g. :5432) of the Docker host =
-- Username: postgres
+- Username: Postgres
 - Password: = can be set or found in your environment variables file .env =
 - Database: = leave this blank =
 
