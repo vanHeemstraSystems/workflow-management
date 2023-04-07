@@ -38,7 +38,13 @@ $ docker-compose --file docker-compose.dev.yml --project-name facts-management-d
 
 Inside pgAdmin register a new Server using the following credentials:
 
-From the menu choose File > Register Server > Connection:
+From the menu choose File > Register ... Server:
+
+In tab **General**:
+
+- Name: Use a name like "facts-management-dev" (if for development) - REQUIRED
+
+In tab **Connection**:
 
 - Host name/address: localhost
 - Port: Use the value of port as specified in the docker-compose file
