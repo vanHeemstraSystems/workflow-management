@@ -9,6 +9,8 @@ Can be browsed as "Facts  Management" at https://vanheemstrasystems.github.io/fa
 
 Documentation of this repository is automatically done with Quarto using GitHub Actions as described at https://github.com/vanHeemstraSystems/quarto-to-github-pages/blob/main/300/300/README.md
 
+Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdatascience.com/how-to-run-postgresql-and-pgadmin-using-docker-3a6a8ae918b5
+
 Based on "Sigma" at https://www.sigmajs.org/#quickstart
 
 Based on "Looking Glass" at https://github.com/MercuryTechnologies/looking-glass-viewer
