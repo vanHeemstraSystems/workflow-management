@@ -31,7 +31,12 @@ $ cd containers/app
 $ docker-compose --file docker-compose.dev.yml --project-name facts-management-dev up --build -d
 ```
 
-**NOTE**: When you try to login to PostgreSQL database via Adminer, use the following credentials:
+**NOTE**: When you try to login to PostgreSQL database via **pgAdmin** (Recommended), use the following credentials:
+
+- Email Address / Username: = Use the value of PGADMIN_DEFAULT_EMAIL_DEV/PROD as specified in the .env file
+- Password: Use the value of PGADMIN_DEFAULT_PASSWORD_DEV/PROD as specified in the .env file
+
+**NOTE**: When you try to login to PostgreSQL database via **Adminer**, use the following credentials:
 
 - System: PostgreSQL
 - Server: = IP address and exposed postgresql port (e.g. :5432) of the Docker host =
