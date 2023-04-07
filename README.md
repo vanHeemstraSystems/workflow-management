@@ -28,3 +28,13 @@ Run as follows:
 $ cd containers/app
 $ docker-compose --file docker-compose.dev.yml --project-name facts-management-dev up --build -d
 ```
+
+**NOTE**: When you try to login to PostgreSQL database via Adminer, use the following credentials:
+
+- System: PostgreSQL
+- Server: db
+- Username: postgres
+- Password: = leave this blank =
+- Database: = leave this blank =
+
+If you tick the "Permanent login" box, next time you visit the login page, your previous shortcut will be shown.
