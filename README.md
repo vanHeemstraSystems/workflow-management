@@ -32,9 +32,9 @@ $ docker-compose --file docker-compose.dev.yml --project-name facts-management-d
 **NOTE**: When you try to login to PostgreSQL database via Adminer, use the following credentials:
 
 - System: PostgreSQL
-- Server: db
+- Server: = IP address and exposed postgresql port (e.g. :5432) of the Docker host =
 - Username: postgres
-- Password: = leave this blank =
+- Password: = can be set or found in your environment variables file .env =
 - Database: = leave this blank =
 
 If you tick the "Permanent login" box, next time you visit the login page, your previous shortcut will be shown.
