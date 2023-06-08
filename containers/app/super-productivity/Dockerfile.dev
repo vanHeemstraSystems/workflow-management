@@ -1,7 +1,7 @@
 ARG IMAGE_REPOSITORY
 ARG IMAGE_REPOSITORY_SEPARATOR
-# pull official base image, see https://hub.docker.com/r/johannesjo/super-productivity:latest
-FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}johannesjo/super-productivity:latest
+# pull official base image, see https://hub.docker.com/r/johannesjo/super-productivity
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_SEPARATOR}johannesjo/super-productivity:v7.11.5
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER
