@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
-    "section": "",
-    "text": "Table of contents\n\nTask - Management"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Task Management",
@@ -19,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
+    "section": "",
+    "text": "Table of contents\n\nTask - Management"
   }
 ]
