@@ -1,21 +1,17 @@
-[![Quarto Publish](https://github.com/vanHeemstraSystems/facts-management/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/facts-management/actions/workflows/publish.yml)
+[![Quarto Publish](https://github.com/vanHeemstraSystems/task-management/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/task-management/actions/workflows/publish.yml)
 
-facts-management
-# Facts Management
+task-management
+# Task Management
 
-Can be read as "Facts Management" at https://app.gitbook.com/s/Rs3XPuVclvoj92Exb9AA/
+Can be read as "Task Management" at https://app.gitbook.com/s/Rs3XPuVclvoj92Exb9AA/
 
-Can be browsed as "Facts  Management" at https://vanheemstrasystems.github.io/facts-management/
+Can be browsed as "Task Management" at https://vanheemstrasystems.github.io/task-management/
 
 Documentation of this repository is automatically done with Quarto using GitHub Actions as described at https://github.com/vanHeemstraSystems/quarto-to-github-pages/blob/main/300/300/README.md
 
 Based on "How to Run PostgreSQL and pgAdmin Using Docker" at https://towardsdatascience.com/how-to-run-postgresql-and-pgadmin-using-docker-3a6a8ae918b5
 
-Based on "Sigma" at https://www.sigmajs.org/#quickstart
-
-Based on "Looking Glass" at https://github.com/MercuryTechnologies/looking-glass-viewer
-
-Based on "Looking Glass Graph Viewer" at https://mercurytechnologies.github.io/looking-glass-viewer/
+Based on "Super Productivity" at https://github.com/johannesjo/super-productivity
 
 Create yarn.lock file as follows:
 
@@ -28,7 +24,7 @@ Run as follows:
 
 ```
 $ cd containers/app
-$ docker-compose --file docker-compose.dev.yml --project-name facts-management-dev up --build -d
+$ docker-compose --file docker-compose.dev.yml --project-name task-management-dev up --build -d
 ```
 
 **NOTE**: When you try to login to PostgreSQL database via **pgAdmin** (Recommended), use the following credentials:
@@ -42,7 +38,7 @@ From the menu choose File > Register ... Server:
 
 In tab **General**:
 
-- Name: Use a name like "facts-management-dev" (if for development) - REQUIRED
+- Name: Use a name like "task-management-dev" (if for development) - REQUIRED
 
 In tab **Connection**:
 
