@@ -30,7 +30,7 @@ ENV HTTPS_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PO
 # COPY . ./
 
 # expose port
-EXPOSE 5005
+EXPOSE 80
 
 # start app
 CMD ["yarn", "start"]
