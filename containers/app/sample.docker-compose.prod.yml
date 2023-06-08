@@ -151,6 +151,28 @@ services:
     #  - ./config:/config    
     network_mode: host
 
+  super-productivity:
+    build:
+      context: ./super-productivity
+      dockerfile: Dockerfile.prod
+      args: # from env_file
+        UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        IMAGE_REPOSITORY_SEPARATOR: ${IMAGE_REPOSITORY_SEPARATOR}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env     
+    container_name: ${UNIQUE_NAMESPACE}-super-productivity-prod
+    security_opt:
+      - no-new-privileges:true
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "6080:80" 
+
 networks:
   proxy:
     external: true
