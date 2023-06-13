@@ -151,9 +151,9 @@ services:
     #  - ./config:/config
     network_mode: host
     
-  super-productivity:
+  jointjs:
     build:
-      context: ./super-productivity
+      context: ./jointjs
       dockerfile: Dockerfile.dev
       args: # from env_file
         UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
@@ -165,7 +165,7 @@ services:
         PROXY_PORT: ${PROXY_PORT}
     env_file:
       - .env     
-    container_name: ${UNIQUE_NAMESPACE}-super-productivity-dev
+    container_name: ${UNIQUE_NAMESPACE}-jointjs-dev
     security_opt:
       - no-new-privileges:true
     privileged: true
