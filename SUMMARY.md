@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Task - Management](README.md)
+* [Map - Management](README.md)
