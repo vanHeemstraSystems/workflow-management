@@ -45,7 +45,7 @@ services:
     #  - CHOKIDAR_USEPULLING=true
     #  - PROXY_PASSWORD='/run/secrets/proxy_password'
     depends_on:
-     - "actual"
+     - "jointjs"
 
   nginx:
     build:
@@ -125,31 +125,6 @@ services:
     restart: unless-stopped
     ports:
       - "3306:3306"
-
-  actual:
-    build:
-      context: ./actual
-      dockerfile: Dockerfile.prod
-      args: # from env_file
-        UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
-        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
-        IMAGE_REPOSITORY_SEPARATOR: ${IMAGE_REPOSITORY_SEPARATOR}
-        PROXY_USER: ${PROXY_USER}
-        PROXY_PASSWORD: ${PROXY_PASSWORD}
-        PROXY_FQDN: ${PROXY_FQDN}
-        PROXY_PORT: ${PROXY_PORT}
-    env_file:
-      - .env
-    container_name: ${UNIQUE_NAMESPACE}-actual-prod
-    security_opt:
-      - no-new-privileges:true
-    privileged: true
-    restart: unless-stopped
-    ports:
-      - "5006:5006"
-    # volumes:
-    #  - ./config:/config    
-    network_mode: host
 
   jointjs:
     build:
