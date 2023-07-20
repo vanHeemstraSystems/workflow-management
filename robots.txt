@@ -1,1 +1,1 @@
-Sitemap: https://github.com/vanHeemstraSystems/map-management/sitemap.xml
+Sitemap: https://github.com/vanHeemstraSystems/workflow-management/sitemap.xml
